@@ -25,6 +25,10 @@ Memory is managed manually — gives flexibility and efficiency if used properly
 | Dynamic | Runtime         | Manual   | `int* p = new int;` |
 
 
+new is used to dynamically allocate memory on the heap.
+
+delete is used to deallocate (free) the memory that was allocated using new.
+
 */
 
 
@@ -48,3 +52,22 @@ delete [] arr;  // free array memory
 
 
 }
+
+/*
+Always use delete[] for arrays created with new[], and delete for single variables.
+
+If you do:
+int* arr = new int[5];
+delete arr;  // ❌ Wrong
+You’re telling the compiler:
+
+"Hey, I only allocated one int, please free the memory just that."
+
+So only the first element might be deallocated. The rest?
+
+Memory remains allocated (memory leak).
+
+For non-primitive types (like classes), their destructors won’t be called ⇒ resource leak.
+
+
+*/
