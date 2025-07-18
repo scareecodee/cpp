@@ -25,6 +25,16 @@ Default Constructor: Takes no parameters. If you don't define any constructors, 
 
 Parameterized Constructor: Takes one or more parameters, allowing you to initialize objects with specific values at creation.
 
+constructor with default parameter ----->
+
+class Student {
+public:
+    Student(string name = "Unknown", int age = 0) {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+
 */
 
 #include <iostream>

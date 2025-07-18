@@ -2,7 +2,6 @@
 In C++, a class can also be declared as a friend of another class.
 This means the entire class (all its member functions) will get access to the private and protected members of the class that grants friendship.
 
-
 */
 
 

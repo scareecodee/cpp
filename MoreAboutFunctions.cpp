@@ -16,6 +16,13 @@ int main() {
     int a = 5;
     modify(a);
     cout << "a = " << a;  // Output: a = 15
+
+
+fn with default value supported is supprted in c++
+SYNTAX---->
+    return_type function_name(type1 param1 = default1, type2 param2 = default2, ...){
+    }
+
 }
 
 */
@@ -32,6 +39,16 @@ void modify2(int* x) {
     *x = *x + 10;
 }
 
+#include <iostream>
+using namespace std;
+
+
+// fn with default parameter value
+void greet(string name = "User") {
+    cout << "Hello, " << name << "!" << endl;
+}
+
+
 
 
 int main() {
@@ -40,5 +57,8 @@ int main() {
     cout << "a = " << a;  // Output: a = 5
 
     modify2(&a);
-    cout << "a = " << a;  // Output: a = 15
+    cout << "a = " << a<<endl;  // Output: a = 15
+
+    greet();  // prints "Hello User"
+    greet("Sundram");
 }
