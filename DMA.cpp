@@ -37,7 +37,7 @@ using namespace std;
 
 
 int main(){ 
-    int* ptr = new int;      // Allocates memory for one int
+    int* ptr = new int;      // Allocates dynamic space in memory for one int
     *ptr = 10;               // Assign value
 
  int* arr = new int[3];  // array of 3 ints
