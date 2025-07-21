@@ -72,7 +72,8 @@ int main(){
     cout<<str<<endl;
 
 /*
- You expect "sundram kumar" to be read by getline(), but instead it skips input.
+if input by user is "Abhay Kumar"
+ You expect "Abhay kumar" to be read by getline(), but instead it skips input.
 
 ❗ Why This Happens:
 After using cin >> name;, the user presses Enter (\n) to submit input.

@@ -17,7 +17,7 @@
 
 
 /*
-✅ Yes, in C++, the main() function is ultimately called by the operating system (OS) — but not directly.
+✅in C++, the main() function is ultimately called by the operating system (OS) — but not directly.
 Let’s explain it clearly and step by step 👇
 
 🔁 Full Flow: How main() is called
@@ -38,7 +38,7 @@ Then it calls your main() function. */
 
 
 /*
-return value	Meaning to OS	Convention
+return value	--> Meaning to OS	Convention
 0	✅ Success	(Standard)
 1, -1, etc.	❌ Failure / error code	(Non-zero = error)
 */
@@ -58,6 +58,7 @@ return 0;
 /*
 Header Files
 A header file in C++ is a file that contains declarations of functions, classes, variables, constants, and macros. It helps in organizing and reusing code efficiently across multiple .cpp files.
+
 What is a Header File?
 It has a .h or .hpp extension (e.g., math.h, iostream, myfile.hpp)
 It does not contain main()

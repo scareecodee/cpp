@@ -21,6 +21,8 @@ int arr[][2] = {{1, 2}, {3, 4}};
 When declaring a 2D array, column size is mandatory, row size can be deduced.
 You cannot resize this array — it's stored on the stack.
 
+
+C++ supports n-dimensional array....
 */
 
 #include <iostream>
