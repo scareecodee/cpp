@@ -28,8 +28,12 @@ public:
 };
 
 int main() {
-   Derived d;
-   d.show(); // which fn has to be called is decided at compile time.output --> Derived show()
+   Derived d, *ptr;
+   d.show(); // which fn has to be called is decided at compile time. output --> Derived show()
+  
+   ptr=&d;
+   ptr->show(); // Derived Show()
+
 }
 
 

@@ -1,7 +1,7 @@
 /*
-for achieving runtime ----> use 'virtual' keyword with the fn. that has to be overriden
+for achieving runtime polymorphism ----> use 'virtual' keyword with the fn. that has to be overriden
 
-"override" ----> keyword can be used when a virtual fn is overriden. it is optional.
+"override" ----> keyword can be used when a virtual fn is overriden. it is optional but suggested to use.
 */
 
 #include <iostream>
@@ -13,12 +13,14 @@ public:
     }
 };
 
+
 class Derived : public Base {
 public:
     void show() override {  // Overridden
         cout << "Derived show()" << endl;
     }
 };
+
 
 int main() {
     Base* b = new Derived();
