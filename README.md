@@ -8,12 +8,8 @@ Welcome to the ultimate C++ repository! This collection contains **detailed, beg
 
 - ✅ Full-fledged C++ Notes (PDF)
   - Covers all core and advanced topics
-  - Flowcharts & diagrams for key concepts
-  - MCQs and coding problems at the end of each topic
 - ✅ Well-commented C++ source code
   - Covers basic to advanced programs
-  - Interview-focused logic and syntax usage
-- ✅ Practice Problems
   - Arrays, Strings, OOP, Pointers, STL, Recursion, etc.
 - ✅ Interview Prep Material
   - Most asked coding questions with solutions
