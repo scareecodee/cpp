@@ -14,3 +14,42 @@ obj2=obj1
 
 */
 
+#include <iostream>
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int age;
+
+    // Parameterized constructor
+    Student(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Copy constructor
+    Student(const Student &s) {
+        name = s.name;
+        age = s.age;
+        cout << "Copy constructor called!" << endl;
+    }
+
+    void display() {
+        cout << "Name: " << name << ", Age: " << age << endl;
+    }
+};
+
+int main() {
+    Student s1("Itachi", 21);   // parameterized constructor
+    Student s2 = s1;            // copy constructor
+
+    s1.display();
+    s2.display();
+    return 0;
+}
+/*
+Copy constructor called!
+Name: Itachi, Age: 21
+Name: Itachi, Age: 21
+*/
