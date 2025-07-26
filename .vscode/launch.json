@@ -1,24 +1,41 @@
 {
-  "version": "0.2.0",
-  "configurations": [
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wcast-align",
+    "-Wconversion",
+    "-Wsign-conversion",
+    "-Wnull-dereference"
+  ],
+  "files.associations": {
+    "iostream": "cpp",
+    "array": "cpp",
+    "type_traits": "cpp",
+    "limits": "cpp"
+  },
+  "command-runner.commands": {
+    "Build C++": "workbench.action.tasks.runTask Build Active C++ File",
+    "Run .exe": "workbench.action.debug.start"
+  },
+  "statusbar.buttons": [
     {
-      "name": "C/C++ Runner: Debug Session",
-      "type": "cppdbg",
-      "request": "launch",
-      "args": [],
-      "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/C++ Programs",
-      "program": "d:/C++ Programs/build/Debug/outDebug",
-      "MIMode": "gdb",
-      "miDebuggerPath": "gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
+      "text": "▶️ Build",
+      "alignment": "left",
+      "command": "command-runner.run",
+      "args": "Build C++"
+    },
+    {
+      "text": "🟢 Run",
+      "alignment": "left",
+      "command": "command-runner.run",
+      "args": "Run .exe"
     }
   ]
 }
