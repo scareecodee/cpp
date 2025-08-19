@@ -28,7 +28,7 @@ int main() {
     vector<int> v;  // vector of size=0
     v.push_back(10);  // size of vector increases by one as one element is pushed . size=1
     v.push_back(20);  // agaion size of array increases by one . size=2
-    v.push_back(30);  // agaion size of array increases by one . size=3
+    v.push_back(30);  // again size of array increases by one . size=3
 
     for(int x : v) cout << x << " ";
 }
@@ -56,7 +56,9 @@ OUTPUT: Front: 11 Back: 33
 
 You can also use index method to access any element of vector like --->
 v[0] ----> element at index 0;
-v[v.size()-1] ---> element qat last index(v.size()-1)
+v[v.size()-1] ---> element at last index(v.size()-1)
+
+
 
 4. swap()
 Swaps contents of two vectors.
